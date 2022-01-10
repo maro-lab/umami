@@ -22,7 +22,7 @@ module.exports = {
   async headers() {
     return [
       {
-        source: '/umami.js',
+        source: '/script.js',
         headers: [
           {
             key: 'Cache-Control',
