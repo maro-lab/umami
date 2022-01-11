@@ -19,7 +19,7 @@ RUN cp -R node_modules/ prod_node_modules/
 # Install development dependencies
 RUN yarn install --frozen-lockfile --network-timeout 1000000
 
-COPY . /build`
+COPY . /build
 RUN yarn next telemetry disable
 RUN yarn build
 
