@@ -1,7 +1,7 @@
 # Build image
 FROM node:12.22 AS build
 ARG BASE_PATH
-ARG DATABASE_TYPE
+ARG DATABASE_TYPE=postgresql
 ENV BASE_PATH=$BASE_PATH
 ENV DATABASE_URL "postgresql://umami:umami@db:5432/umami"
 ENV DATABASE_TYPE $DATABASE_TYPE
